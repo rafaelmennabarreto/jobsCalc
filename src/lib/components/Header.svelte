@@ -50,7 +50,10 @@
 		</span>
 
 		<div class="flex justify-end mt-4 col-span-4 sm:mt-0 sm:col-span-1">
-			<button class="bg-[#F1972C] rounded-lg flex items-center w-full sm:max-w-72" on:click={goNewJob}>
+			<button
+				class="bg-[#F1972C] rounded-lg flex items-center w-full sm:max-w-72"
+				on:click={goNewJob}
+			>
 				<p
 					class="bg-[#FCFDFF] bg-opacity-25 text-2xl text-white text-center min-w-8 h-8 rounded-lg m-3 mr-8"
 				>
