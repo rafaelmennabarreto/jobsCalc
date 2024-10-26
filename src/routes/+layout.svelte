@@ -1,14 +1,14 @@
 <script>
 	import '../app.css';
-	import Header from '$lib/components/Header.svelte';
 	import { page } from '$app/stores';
-	import NavigationHeader from '$lib/components/NavigationHeader.svelte';
-</script>
+	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 
-{#if $page.url.pathname === '/'}
-  <Header />
-{:else}
-	<NavigationHeader />
-{/if}
+	onMount(() => {
+		if ($page.url.pathname === '/') {
+			goto('/home');
+		}
+	});
+</script>
 
 <slot />

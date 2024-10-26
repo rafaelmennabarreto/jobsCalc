@@ -4,7 +4,7 @@
 	import logo from '../../assets/Simbol.png';
 
 	function goNewJob() {
-		goto('/new-job');
+		goto('/job/edit');
 	}
 </script>
 
